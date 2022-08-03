@@ -1,1 +1,2 @@
-export * from "./features";
+export * from "./content";
+export * from "./links";

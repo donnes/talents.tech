@@ -1,21 +1,22 @@
 import Link from "next/link";
 import { Logo } from "../logo";
 import { IconInstagram, IconLinkedIn, IconGithub } from "../icons";
+import { links } from "../../data/links";
 
 const sections = [
   {
     title: "Customers",
     links: [
       {
-        href: "/hire",
+        href: links.hire,
         label: "Hire Top Talents",
       },
       {
-        href: "/contact",
+        href: links.bookACall,
         label: "Book a Call",
       },
       {
-        href: "/skills",
+        href: links.skills,
         label: "Hire for Specific Skills",
       },
       {
@@ -28,19 +29,19 @@ const sections = [
     title: "Developers",
     links: [
       {
-        href: "/jobs",
+        href: links.jobs,
         label: "Apply for Jobs",
       },
       {
-        href: "/dev-camp",
+        href: links.devCamps,
         label: "Dev Camp",
       },
       {
-        href: "/tech-interview-camp",
+        href: links.devCamps,
         label: "Tech Interview Camp",
       },
       {
-        href: "/career-consulting",
+        href: links.careerConsulting,
         label: "Career Consulting",
       },
     ],
@@ -49,15 +50,15 @@ const sections = [
     title: "Company",
     links: [
       {
-        href: "/about-us",
+        href: links.aboutUs,
         label: "About Us",
       },
       {
-        href: "/contact",
+        href: links.contact,
         label: "Contact Us",
       },
       {
-        href: "/legal",
+        href: links.legal,
         label: "Legal",
       },
     ],
@@ -98,10 +99,10 @@ export function Footer() {
                 Boost your team with high-performing Software Engineers.
               </p>
 
-              <div className="flex">
+              <div className="flex items-center justify-center md:justify-start gap-4">
                 {socials.map((link) => (
                   <Link key={link.href} href={link.href}>
-                    <a className="mr-6 text-indigo-600" aria-label={link.label}>
+                    <a className="text-indigo-600" aria-label={link.label}>
                       <span className="flex w-5 h-5">
                         <link.icon />
                       </span>

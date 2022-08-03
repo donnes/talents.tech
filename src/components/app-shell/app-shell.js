@@ -1,10 +1,10 @@
-import { Header } from "../header";
+import { Nav } from "../nav";
 import { Footer } from "../footer";
 
 export function AppShell({ children }) {
   return (
     <>
-      <Header />
+      <Nav />
       {children}
       <Footer />
     </>
