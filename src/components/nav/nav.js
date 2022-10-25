@@ -3,15 +3,7 @@ import Image from "next/future/image";
 import Link from "next/link";
 import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
-import { links } from "../../data/links";
-
-const navigation = [
-  { name: "How it Work", href: "/" },
-  { name: "Hire for Specific Skills", href: links.skills },
-  { name: "Dev Camp", href: links.devCamp },
-  { name: "About Us", href: links.aboutUs },
-  { name: "Contact Us", href: links.contact },
-];
+import { commonContent, links } from "../../data";
 
 export function Nav() {
   return (
@@ -46,8 +38,8 @@ export function Nav() {
             </div>
             <div className="hidden md:block md:space-x-8">
               <Link href={links.hire}>
-                <a className="w-full flex items-center justify-center border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 py-3 text-md px-4">
-                  Hire Top Talents
+                <a className="w-full flex items-center justify-center border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 py-3 text-md px-4 uppercase">
+                  {commonContent.nav.primaryButton}
                 </a>
               </Link>
             </div>
@@ -87,7 +79,7 @@ export function Nav() {
               </div>
             </div>
             <div className="px-2 pt-2 pb-3 space-y-1">
-              {navigation.map((item) => (
+              {commonContent.nav.menu.map((item) => (
                 <Link key={item.name} href={item.href}>
                   <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
                     {item.name}
@@ -96,8 +88,8 @@ export function Nav() {
               ))}
 
               <Link href={links.hire}>
-                <a className="w-full flex items-center justify-center border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 py-3 text-md px-4">
-                  Hire Top Talents
+                <a className="w-full flex items-center justify-center border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 py-3 text-md px-4 uppercase">
+                  {commonContent.nav.primaryButton}
                 </a>
               </Link>
             </div>

@@ -10,6 +10,10 @@ const nextConfig = {
       allowFutureImage: true,
     },
   },
+  i18n: {
+    locales: ["pt-BR", "en-US"],
+    defaultLocale: "pt-BR",
+  },
 };
 
 module.exports = nextConfig;

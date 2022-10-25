@@ -5,14 +5,6 @@ import {
   ShieldCheckIcon,
 } from "@heroicons/react/outline";
 
-export const commonContent = {
-  cta: {
-    title: "Hire top talents from Brazil",
-    titleHighlight: "Build your dream team today",
-    primaryButtonText: "Hire Top Talents",
-  },
-};
-
 export const homeContent = {
   nav: {
     primaryButton: "Hire Top Talents",
